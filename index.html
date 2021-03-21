@@ -8,14 +8,20 @@
     <title>Portfolio Page</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/de66c98e4f.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
     <header>
         <!-- START NAVIGATION-->
         <nav id="navbar">
-            <a class="navlink" href="#welcome-section">About</a>
-            <a class="navlink" href="#projects">Work</a>
-            <a class="navlink" href="#contact">Contact</a>
+            <button id="togglenavbar" class="togglenavbar">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div id="navigation">
+                <a class="navlink" href="#welcome-section">About</a>
+                <a class="navlink" href="#projects">Work</a>
+                <a class="navlink" href="#contact">Contact</a>
+            </div>
         </nav>
         <!--END NAVIGATION-->
     </header>
@@ -30,24 +36,27 @@
         <section id="projects" class="section">
             <h3>These are some of my Projects</h3>
             <div id="project-container">
-                    <a class="project-tile" target="_blank" href="https://codepen.io/Adebisola/full/MWbbdmV">
-                        <img src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fassets.codepen.io%2F5133109%2Finternal%2Fscreenshots%2Fpens%2FMWbbdmV.default.png%3Ffit%3Dcover%26format%3Dauto%26ha%3Dtrue%26height%3D540%26quality%3D75%26v%3D2%26version%3D1613134455%26width%3D960">
+                <div class="project-tile">
+                    <a target="_blank" href="https://codepen.io/Adebisola/full/MWbbdmV">
+                        <img class="img" src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fassets.codepen.io%2F5133109%2Finternal%2Fscreenshots%2Fpens%2FMWbbdmV.default.png%3Ffit%3Dcover%26format%3Dauto%26ha%3Dtrue%26height%3D540%26quality%3D75%26v%3D2%26version%3D1613134455%26width%3D960">
                     </a>
-                    <a class="project-tile" href="https://codepen.io/Adebisola/full/bGBBemZ" target="_blank">
-                        <img src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fassets.codepen.io%2F5133109%2Finternal%2Fscreenshots%2Fpens%2FbGBBemZ.default.png%3Ffit%3Dcover%26format%3Dauto%26ha%3Dfalse%26height%3D540%26quality%3D75%26v%3D2%26version%3D1613044235%26width%3D960">
+                    <a  href="https://codepen.io/Adebisola/full/bGBBemZ" target="_blank">
+                        <img class="img" src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fassets.codepen.io%2F5133109%2Finternal%2Fscreenshots%2Fpens%2FbGBBemZ.default.png%3Ffit%3Dcover%26format%3Dauto%26ha%3Dfalse%26height%3D540%26quality%3D75%26v%3D2%26version%3D1613044235%26width%3D960">
                     </a>
-                    <a class="project-tile" href="https://codepen.io/Adebisola/pen/vYyeKGV">
-                        <img src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fassets.codepen.io%2F5133109%2Finternal%2Fscreenshots%2Fpens%2FvYyeKGV.default.png%3Ffit%3Dcover%26format%3Dauto%26ha%3Dfalse%26height%3D540%26quality%3D75%26v%3D2%26version%3D1614728912%26width%3D960"
+                    <a href="https://codepen.io/Adebisola/pen/vYyeKGV" target="_blank">
+                        <img class="img" src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fassets.codepen.io%2F5133109%2Finternal%2Fscreenshots%2Fpens%2FvYyeKGV.default.png%3Ffit%3Dcover%26format%3Dauto%26ha%3Dfalse%26height%3D540%26quality%3D75%26v%3D2%26version%3D1614728912%26width%3D960">
                     </a>
-                    <a  class="project-tile"href="https://codepen.io/Adebisola/pen/XWjLmoe">
-                        <img src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fassets.codepen.io%2F5133109%2Finternal%2Fscreenshots%2Fpens%2FXWjLmoe.default.png%3Ffit%3Dcover%26format%3Dauto%26ha%3Dfalse%26height%3D540%26quality%3D75%26v%3D2%26version%3D1613134745%26width%3D960">
-                    <a class="project-tile" href="https://codepen.io/Adebisola/pen/VwKXmVE">
-                        <img src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fassets.codepen.io%2F5133109%2Finternal%2Fscreenshots%2Fpens%2FVwKXmVE.default.png%3Ffit%3Dcover%26format%3Dauto%26ha%3Dfalse%26height%3D540%26quality%3D75%26v%3D2%26version%3D1613134806%26width%3D960">
+                    <a href="https://codepen.io/Adebisola/pen/XWjLmoe" target="_blank">
+                        <img class="img" src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fassets.codepen.io%2F5133109%2Finternal%2Fscreenshots%2Fpens%2FXWjLmoe.default.png%3Ffit%3Dcover%26format%3Dauto%26ha%3Dfalse%26height%3D540%26quality%3D75%26v%3D2%26version%3D1613134745%26width%3D960">
                     </a>
-                    <a class="project-tile" href="https://codepen.io/Adebisola/pen/NWbNgvq">
-                        <img src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fassets.codepen.io%2F5133109%2Finternal%2Fscreenshots%2Fpens%2FNWbNgvq.default.png%3Ffit%3Dcover%26format%3Dauto%26ha%3Dfalse%26height%3D540%26quality%3D75%26v%3D2%26version%3D1613134657%26width%3D960">
+                    <a href="https://codepen.io/Adebisola/pen/VwKXmVE" target="_blank">
+                        <img class="img" src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fassets.codepen.io%2F5133109%2Finternal%2Fscreenshots%2Fpens%2FVwKXmVE.default.png%3Ffit%3Dcover%26format%3Dauto%26ha%3Dfalse%26height%3D540%26quality%3D75%26v%3D2%26version%3D1613134806%26width%3D960">
+                    </a>
+                    <a href="https://codepen.io/Adebisola/pen/NWbNgvq" target="_blank">
+                        <img class="img" src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fassets.codepen.io%2F5133109%2Finternal%2Fscreenshots%2Fpens%2FNWbNgvq.default.png%3Ffit%3Dcover%26format%3Dauto%26ha%3Dfalse%26height%3D540%26quality%3D75%26v%3D2%26version%3D1613134657%26width%3D960">
                     </a>
                 </div>
+                    
             </div>
             <div id="profile-link">
              <a class="profile-link" href="https://github.com/Adebisola" target="_blank">Show All</a>
@@ -85,7 +94,7 @@
         </section>
         <footer id="footer">
             <p class="footer1"><em>**This is just a girl's portfolio. All the projects and contact details given are real. I hope you like my newbie webpage.</em></p>
-            <p class="footer1">Created for my FreecodeCamp Project</p>
+            <p class="footer1">Created for my BootCamp Project</p>
         </footer>
     </main>
 </body>
